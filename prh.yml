@@ -1,0 +1,43 @@
+version: 1
+rules:
+  - expected: ．
+    pattern: /[。｡]/g
+  - expected: ，
+    pattern: /[、､]/g
+  - expected: 示す
+    pattern: /提案する/g
+  - expected: 本手法
+    pattern: /提案手法/g
+  - expected: 例として
+    pattern: /例えば/g
+  - expected: 伴って
+    pattern: /伴い/g
+  - expected: することに伴い
+    pattern: /するのに伴い/g
+  - expected: 利用方法
+    pattern: /利用法/g
+  - expected: 調査の結果
+    pattern: /調べると/g
+  - expected: 内蔵
+    pattern: /内臓/g
+  - expected: についてxxxを述べる or を述べる
+    pattern: /について述べる/g
+  - expected: され
+    pattern: /されてきている/g
+    message: 「されてきている」は使わないでください
+  - expected: して
+    pattern: /してきている/g
+    message: 「してきている」は使わないでください
+  - expected: 利用可能だが
+    pattern: /利用可能なものであったが/g
+  - expected: /[0-9] Hz/g
+    pattern: /[0-9]Hz/g
+  - expected: /[0-9] second/g
+    pattern: /[0-9]second/g
+  - expected: /[0-9] s/g
+    pattern: /[0-9]s/g
+  - expected: /[0-9] ms/g
+    pattern: /[0-9]ms/g
+
+
+

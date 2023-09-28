@@ -1,0 +1,19 @@
+{
+    "plugins": [
+        "latex2e"
+    ],
+    "rules": {
+        "preset-ja-technical-writing": true,
+        "prh": {
+            "rulePaths": [
+                "./prh.yml"
+            ]
+        },
+        "no-parallel-ka": true,
+        "@textlint-ja/morpheme-match": {
+            "dictionaryPathList": [
+                "./morpheme-match-dict.js"
+            ]
+        }
+    }
+}
