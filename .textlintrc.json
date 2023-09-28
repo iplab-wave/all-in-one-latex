@@ -3,7 +3,6 @@
         "latex2e"
     ],
     "rules": {
-        "preset-ja-technical-writing": true,
         "prh": {
             "rulePaths": [
                 "./prh.yml"
@@ -14,6 +13,11 @@
             "dictionaryPathList": [
                 "./morpheme-match-dict.js"
             ]
+        },
+        "preset-ja-technical-writing": {
+            "ja-no-mixed-period": {
+                "periodMark": "．"
+            }
         }
     }
 }
