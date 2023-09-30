@@ -14,7 +14,3 @@ latex on docker at local vscode with textlint
    git clone url
 5. vscodeにて開く
 6. 「Reopen in container」のポップアップをクリック
-7. 依存パッケージのインストール
-    ```bash
-    npm install
-    ```
