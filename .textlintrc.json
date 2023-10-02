@@ -17,6 +17,16 @@
         "preset-ja-technical-writing": {
             "ja-no-mixed-period": {
                 "periodMark": "．"
+            },
+            "max-kanji-continuous-len": {
+                "max": 8
+            },
+            "ja-no-redundant-expression": {
+                "dictOptions": {
+                    "dict5": {
+                        "disabled": true
+                    }
+                }
             }
         }
     }
