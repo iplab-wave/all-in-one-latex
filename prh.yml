@@ -38,6 +38,7 @@ rules:
     pattern: /[0-9]s/g
   - expected: /[0-9] ms/g
     pattern: /[0-9]ms/g
-
-
-
+  - expected: 同一？違うならどこが違う？
+    pattern: /同様/g
+  - expected: 同じ？違うならどこが違う？
+    pattern: /参考に/g
