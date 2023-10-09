@@ -13,6 +13,9 @@ latex on docker at local vscode with textlint and github
 - GitHub
   - バージョン管理が可能
   - GitHub のエコシステム（PR, CI, Projects, Issues, actions, ...）が使用可能
+  - 以下の actions を作成済み
+    - tag に応じて pdf をビルドして release を作成する
+    - pull request にビルドした pdf のリンクを貼る
 - textlint
   - 文章校正が可能
 
