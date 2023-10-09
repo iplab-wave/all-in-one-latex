@@ -1,0 +1,38 @@
+name: make_pdf_in_PR
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Build Docker image
+      run: docker build -t latex_docker .devcontainer/
+
+    - name: Compile LaTeX document
+      run: docker run --rm -v $PWD:/workdir latex_docker latexmk
+
+    - name: Upload PDF
+      uses: actions/upload-artifact@v2
+      with:
+        name: compiled-document
+        path: ./main.pdf
+
+    - name: Comment on PR
+      uses: actions/github-script@v3
+      with:
+        github-token: ${{secrets.GITHUB_TOKEN}}
+        script: |
+          const artifactURL = `https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts`;
+          github.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: `Compilation complete. You can download the compiled PDF [here](${artifactURL}).`
+          });
