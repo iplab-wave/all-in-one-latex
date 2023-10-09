@@ -1,1 +1,9 @@
 node_modules
+*.aux
+*.dvi
+*.fdb_latexmk
+*.fls
+*.log
+
+# ignore only root pdf to track img/*.pdf
+/*.pdf
