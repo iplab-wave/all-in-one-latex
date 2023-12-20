@@ -29,7 +29,7 @@ jobs:
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
-          const artifactURL = `https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts`;
+          const artifactURL = `https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}`;
           github.issues.createComment({
             issue_number: context.issue.number,
             owner: context.repo.owner,
