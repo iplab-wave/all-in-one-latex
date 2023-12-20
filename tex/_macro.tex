@@ -1,0 +1,41 @@
+\usepackage{color}
+\usepackage{hyperref}
+
+%画像と枠線をくっつける
+\fboxsep=0pt 
+\fboxrule=1pt
+
+% 修正とTODO
+\newcommand{\memo}[1]{\color{black} \color[rgb]{0.7, 0.7, 1.0} \# #1 \color{black}}
+\newcommand{\todo}[1]{\color{black} \color[rgb]{1.0, 0.7, 0.7} @todo： #1 \color{black}}
+\newcommand{\sodan}[1]{\color{black} \color[rgb]{0.4, 1.0, 0.1} @相談事： #1 \color{black}}
+
+% 色付け
+\newcommand{\red}[1]{\color{red} #1 \color{black}}
+\newcommand{\blue}[1]{\color{blue} #1 \color{black}}
+\newcommand{\green}[1]{\color{green} #1 \color{black}}
+\newcommand{\cyan}[1]{\color{cyan} #1 \color{black}}
+\newcommand{\magenta}[1]{\color{magenta} #1 \color{black}}
+\newcommand{\yellow}[1]{\color{yellow} #1 \color{black}}
+
+% 図の参照用
+\newcommand{\figref}[1]{図\ref{fig:#1}}
+% 表の参照用
+\newcommand{\tbref}[1]{表\ref{tb:#1}}
+% % 数式の参照用
+% \newcommand{\eqref}[1]{式（\ref{eq:#1}）}
+
+%\renewcommand{\todo}[1]{}
+%\renewcommand{\sodan}[1]{}
+
+% イタリック　2023-12-12追記
+% 以下は，2022年度のバイアス班HCI199論文において，各指標を本文に簡単にかけるようにしたもの
+% わざわざ毎回\mathitなどを呼び出さないことは，記述のミス軽減と効率化につながる
+\newcommand{\MT}{\texorpdfstring{$\mathit{MT}$}\xspace}
+\newcommand{\ER}{\texorpdfstring{$\mathit{ER}$}\xspace}
+\newcommand{\ID}{\texorpdfstring{$\mathit{ID}$}\xspace}
+\newcommand{\TP}{\texorpdfstring{$\mathit{TP}$}\xspace}
+\newcommand{\AIC}{\texorpdfstring{$\mathit{AIC}$}\xspace}
+\newcommand{\BIC}{\texorpdfstring{$\mathit{BIC}$}\xspace}
+\newcommand{\D}{\texorpdfstring{$\mathit{D}$}\xspace}
+\newcommand{\W}{\texorpdfstring{$\mathit{W}$}\xspace}
