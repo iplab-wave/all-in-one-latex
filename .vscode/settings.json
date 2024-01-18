@@ -51,11 +51,11 @@
         "*.bcf",
     ],
     "latex-workshop.latexindent.args": [
-        "-r",
-        "-c",
-        "%DIR%/",
         "%TMPFILE%",
-        "-y=defaultIndent: '%INDENT%'"
+        "-c=%DIR%/",
+        "-g=%DOCFILE%-indent.log",
+        "-r",
+        "-l",
     ],
     "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?．。，、（）「」［］｛｝《》てにをはがのともへでや",
     "editor.formatOnSave": true,

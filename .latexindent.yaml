@@ -1,4 +1,4 @@
-# latexindent configuration file
+# latexindentの設定ファイル
 onlyOneBackUp: 1
 
 defaultIndent: "  "
@@ -22,10 +22,10 @@ indentAfterHeadings:
     indentAfterThisHeading: 2
 
 indentAfterItems:
-  itemize: 2
-  enumerate: 2
-  description: 2
-  list: 2
+    itemize: 2
+    enumerate: 2
+    description: 2
+    list: 2
 
 indentRules:
   myenvironment: "  "
@@ -34,9 +34,10 @@ indentRules:
   section: "  "
 
 replacements:
-  - amalgamate: 1
+  - 
+    amalgamate: 1
   -
-    # Insert 1 half-width space before and after "="
+    # Insert 1 hlf-width space before and after "="
     substitution: s/(?<!\+|\-)\h{0,}\=\h{0,}(?!\+|\-)/ \= /g
     lookForThis: 1
   -

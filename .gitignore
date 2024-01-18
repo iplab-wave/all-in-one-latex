@@ -4,6 +4,7 @@ node_modules
 *.fdb_latexmk
 *.fls
 *.log
+*.bak
 
 # ignore only root pdf to track img/*.pdf
 /*.pdf
