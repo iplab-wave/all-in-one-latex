@@ -50,6 +50,13 @@
         "*.toc",
         "*.bcf",
     ],
+    "latex-workshop.latexindent.args": [
+        "%TMPFILE%",
+        "-c=%DIR%/",
+        "-g=%DOCFILE%-indent.log",
+        "-r",
+        "-l",
+    ],
     "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?．。，、（）「」［］｛｝《》てにをはがのともへでや",
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true,
 }
