@@ -62,3 +62,8 @@ VSCode内の右下に表示されるポップアップから、**Reopen in Conta
 
 > [!TIP]
 > ポップアップを消してしまったり、なんらかの理由で開かれない場合は、VSCodeのコマンドパレットを開き（Mac: `Cmd+Shift+P`, Windows: `Ctrl+Shift+P`）、**Remote-Containers: Reopen in Container** を選択する。
+
+### 7. pdf生成方法
+
+（一例。）
+保存すれば自動でpdfが生成される。エラーが起きた場合は、ウィンドウ左下の回っている矢印をクリック > Terminate current compilationをクリックして、一旦止める。その後、Clean up auxiliary filesを押し一時的なファイルを削除する。その後、もう一度保存を再開する。
