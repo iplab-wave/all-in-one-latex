@@ -1,9 +1,9 @@
 version: 1
 rules:
   - expected: ．
-    pattern: /[。｡]/g
+    pattern: /(?<=[^0-9a-zA-Z])[。｡ .]/g
   - expected: ，
-    pattern: /[、､]/g
+    pattern: /(?<=[^0-9a-zA-Z])[、､ ,]/g
   - expected: 示す
     pattern: /提案する/g
   - expected: 本手法
